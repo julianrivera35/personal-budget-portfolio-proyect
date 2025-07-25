@@ -62,4 +62,15 @@
   flex-direction: row;
   justify-content: space-evenly;
   gap: 10px;
+  margin-bottom: 30px;
+}
+
+.chart-container {
+  display: flex;
+  gap: 10px;
+  min-width: 36rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
