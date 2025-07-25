@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card/Card';
+import ThemeToggle from './Components/ThemeToggle/ThemeToggle';
+import { Wallet, TrendingDown, TrendingUp  } from 'lucide-react';
 
 function App() {
   return (
     <div className="App">
+      <ThemeToggle />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Budget Dashboard</h1>
+        <p>Manage your envelope budgets and track your spending</p>
       </header>
+      <div className="card-container">
+        <Card title="Total Budget" value="1000" envelopes="10" icon={<Wallet />}></Card>
+        <Card title="Total Spent" value="500" envelopes="10" icon={<TrendingDown />}></Card>
+        <Card title="Remaining Budget" value="500" envelopes="10" icon={<TrendingUp />}></Card>
+      </div>
     </div>
   );
 }

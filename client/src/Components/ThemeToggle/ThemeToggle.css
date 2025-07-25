@@ -1,0 +1,18 @@
+.theme-toggle {
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--secondary-bg);
+  transform: scale(1.1);
+}
